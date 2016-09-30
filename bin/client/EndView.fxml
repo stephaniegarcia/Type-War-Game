@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.EndController">
+   <children>
+      <Pane prefHeight="618.0" prefWidth="600.0" style="-fx-background-color: BLACK;">
+         <children>
+            <Label fx:id="localUserScore" layoutX="384.0" layoutY="438.0" prefHeight="77.0" prefWidth="173.0" text="XX" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label fx:id="remoteUserScore" layoutX="384.0" layoutY="522.0" prefHeight="60.0" prefWidth="173.0" text="XX" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            <Label fx:id="localUserName" layoutX="164.0" layoutY="438.0" prefHeight="77.0" prefWidth="182.0" text="You" textFill="#139a23">
+               <font>
+                  <Font name="AR ESSENCE" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="remoteUserName" layoutX="164.0" layoutY="513.0" prefHeight="77.0" prefWidth="182.0" text="Opponent" textFill="#4949ff">
+               <font>
+                  <Font name="AR ESSENCE" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="resultsImage" fitHeight="202.0" fitWidth="600.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="198.0" layoutY="379.0" text="Final score" textFill="#aeaeae">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

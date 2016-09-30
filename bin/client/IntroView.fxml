@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="618.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.IntroController">
+   <children>
+      <Pane prefHeight="618.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="playButton" layoutX="93.0" layoutY="501.0" mnemonicParsing="false" onAction="#startGame" opacity="0.8" prefHeight="88.0" prefWidth="418.0" text="PLAY" textAlignment="CENTER">
+               <font>
+                  <Font name="AR DESTINE" size="48.0" />
+               </font></Button>
+            <TextField fx:id="nameTextField" alignment="CENTER" layoutX="189.0" layoutY="431.0" opacity="0.79" prefHeight="35.0" prefWidth="225.0" promptText="Enter your name...">
+               <font>
+                  <Font name="AR DESTINE" size="19.0" />
+               </font></TextField>
+            <ImageView fitHeight="205.0" fitWidth="591.0" layoutX="6.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../typeWarLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

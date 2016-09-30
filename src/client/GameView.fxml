@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="618.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.GameController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="605.0" prefWidth="606.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="attackButton" layoutX="53.0" layoutY="481.0" mnemonicParsing="false" onAction="#attack" prefHeight="42.0" prefWidth="118.0" text="Attack">
+               <font>
+                  <Font name="AR BERKLEY" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="defendButton" layoutX="413.0" layoutY="481.0" mnemonicParsing="false" onAction="#defend" prefHeight="42.0" prefWidth="118.0" text="Defend">
+               <font>
+                  <Font name="AR BERKLEY" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="attackTextField" layoutX="38.0" layoutY="444.0" />
+            <TextField fx:id="defendTextField" layoutX="398.0" layoutY="444.0" />
+            <Label fx:id="gameTimer" contentDisplay="CENTER" layoutX="39.0" layoutY="16.0" prefHeight="75.0" prefWidth="118.0" text="TIMER" textAlignment="CENTER" textFill="#ebe9e9" textOverrun="CLIP">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <GridPane fx:id="wordGridPane" layoutX="36.0" layoutY="553.0" prefHeight="42.0" prefWidth="547.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="24.0" minHeight="9.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="16.0" minHeight="4.0" prefHeight="6.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="6.0" prefWidth="107.0" text="Label" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="17.0" prefWidth="155.0" text="Label" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Label prefHeight="43.0" prefWidth="108.0" text="Label" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+            <Label fx:id="scoreLabel1" layoutX="518.0" layoutY="20.0" prefHeight="25.0" prefWidth="57.0" text="0" textFill="#ffbb54">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="scoreLabel2" layoutX="518.0" layoutY="53.0" prefHeight="25.0" prefWidth="57.0" text="0" textFill="#fffa69">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="localPlayerNameLabel" contentDisplay="CENTER" layoutX="398.0" layoutY="20.0" prefHeight="30.0" prefWidth="81.0" text="Player 1" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="opponentNameLabel" layoutX="398.0" layoutY="53.0" prefHeight="30.0" prefWidth="81.0" text="Player 2" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Line endX="510.0" layoutX="100.0" layoutY="90.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="510.0" layoutX="100.0" layoutY="430.0" startX="-100.0" stroke="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
